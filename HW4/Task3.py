@@ -9,6 +9,6 @@ for  i in range(10):
 print(lst)
 lst2 = []
 for i in lst:
-    if lst.count(i) < 2:
+    if lst.count(i) == 1:
         lst2.append(i)
 print(lst2)
