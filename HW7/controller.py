@@ -8,7 +8,7 @@ def start():
         view.show(*function.create_data())
         start()
     elif button == 2:
-        view.show(function.get_data())
+        view.show(*function.get_data())
     elif button == 3:
         function.save_data()
     elif button == 4:
