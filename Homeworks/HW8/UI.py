@@ -10,7 +10,7 @@ def menu(data):
             # fileIO.add_data(data)
             str_data = input('Enter your data delimited by tab> ')
             row = str_data.split('\t')
-            data.append([row[0], row[1], row[2]])
+            data.append(row)
         elif answer == 3:
             str_del = input('Ente ID> ')
             for  i in range(len(data)):
