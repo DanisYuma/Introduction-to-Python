@@ -15,7 +15,7 @@ def menu(data):
             str_del = input('Ente ID> ')
             for  i in range(len(data)):
                 if data[i][0] == str_del:
-                    del (data[i])
+                    del data[i]
         elif answer == 4:
             fileIO.write_data('data.csv', data)
         elif answer == 5:
