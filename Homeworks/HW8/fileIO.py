@@ -4,8 +4,9 @@ def read_data(file_name):
     data = []
     with open(file_name, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter='\t')
-        for row in reader:
-            data.append([row[0], row[1], row[2]])
+        for row1, row2, row1 in reader:
+            row = row[0].split(';')
+            data.append(row)
     return data
 
 def write_data(filename, data):
